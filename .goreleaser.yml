@@ -6,13 +6,38 @@ before:
     - go mod tidy
     # you may remove this if you don't need go generate
     - go generate ./...
+
+
+#      - linux/amd64
+#      - darwin/amd64
+#      - darwin/arm64
+
 builds:
   - env:
       - CGO_ENABLED=0
     goos:
       - linux
-      - windows
       - darwin
+    hooks:
+      post: |
+        sh -c '
+        cat > /tmp/gon-arm64.hcl << EOF
+        source = ["."]
+        bundle_id = "appsyouwear.com.appbrew"
+        apple_id {
+          username = "awear@appsyouwear.com"
+          password = "@keychain:developer_id_application"
+        }
+        sign {
+          application_identity = "Developer ID Application: Christian Gregersen (58AT3C5Q69)"
+        }
+        zip {
+          output_path = "./dist/appbrew-{{ .Version }}_arm64.zip"
+        }
+        EOF
+        gon /tmp/gon-arm64.hcl
+        '
+
 archives:
   - replacements:
       darwin: Darwin
