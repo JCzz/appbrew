@@ -1,7 +1,7 @@
 # The path follows a pattern
 # ./dist/BUILD-ID_TARGET/BINARY-NAME
 source = ["."]
-bundle_id = "appsyouwear.com.appbrew"
+bundle_id = "com.appsyouwear.appbrew"
 
 apple_id {
     username = "awear@appsyouwear.com"
