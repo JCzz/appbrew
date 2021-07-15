@@ -18,8 +18,8 @@ builds:
     goos:
       - linux
       - darwin
-    hooks:
-      post: gon gon.hcl
+#    hooks:
+#      post: gon gon.hcl
 archives:
   - replacements:
       darwin: Darwin
