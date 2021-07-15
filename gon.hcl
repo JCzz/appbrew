@@ -1,7 +1,7 @@
 # The path follows a pattern
 # ./dist/BUILD-ID_TARGET/BINARY-NAME
-source = ["./dist/foo-macos_darwin_amd64/foo"]
-bundle_id = "com.mitchellh.example.terraform"
+source = ["."]
+bundle_id = "appsyouwear.com.appbrew"
 
 apple_id {
     username = "awear@appsyouwear.com"
