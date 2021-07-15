@@ -2,7 +2,7 @@
 # ./dist/BUILD-ID_TARGET/BINARY-NAME
 
 source = ["."]
-# bundle_id = "com.appsyouwear.mybrew"
+bundle_id = "com.appsyouwear.mybrew"
 
 apple_id {
     username = "awear@appsyouwear.com"
