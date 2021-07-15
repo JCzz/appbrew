@@ -1,5 +1,6 @@
 # The path follows a pattern
 # ./dist/BUILD-ID_TARGET/BINARY-NAME
+
 source = ["."]
 bundle_id = "com.appsyouwear.appbrew"
 
