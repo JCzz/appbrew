@@ -9,14 +9,14 @@ before:
 
 builds:
 - binary: foo
-  id: foo
+  id: appbrew
   goos:
   - linux
   goarch:
   - amd64
 # notice that we need a separated build for the MacOS binary only:
 - binary: foo
-  id: foo-macos
+  id: appbrew-macos
   goos:
   - darwin
   goarch:
