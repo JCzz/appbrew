@@ -8,36 +8,18 @@ before:
     - go generate ./...
 
 builds:
-  - env:
-      - CGO_ENABLED=0
-    goos:
-      - linux
-      - darwin
-archives:
-  - replacements:
-      darwin: Darwin
-      linux: Linux
-      windows: Windows
-      386: i386
-      amd64: x86_64
-checksum:
-  name_template: 'checksums.txt'
-snapshot:
-  name_template: "{{ .Tag }}-next"
-changelog:
-  sort: asc
-  filters:
-    exclude:
-      - '^docs:'
-      - '^test:'
-signs:
-  - signature: "${artifact}.dmg"
-    ids:
-    - appbrew_darwin # here we filter the macos only build id
-    # you'll need to have gon on PATH
-    cmd: gon
-    # you can follow the gon docs to properly create the gon.hcl config file:
-    # https://github.com/mitchellh/gon
-    args:
-    - gon.hcl
-    artifacts: all
+- binary: foo
+  id: foo
+  goos:
+  - linux
+  goarch:
+  - amd64
+# notice that we need a separated build for the MacOS binary only:
+- binary: foo
+  id: foo-macos
+  goos:
+  - darwin
+  goarch:
+  - amd64
+  hooks:
+    post: gon gon.hcl
