@@ -7,11 +7,6 @@ before:
     # you may remove this if you don't need go generate
     - go generate ./...
 
-
-#      - linux/amd64
-#      - darwin/amd64
-#      - darwin/arm64
-
 builds:
   - env:
       - CGO_ENABLED=0
@@ -38,7 +33,7 @@ changelog:
 signs:
   - signature: "${artifact}.dmg"
     ids:
-    - foo-macos # here we filter the macos only build id
+    - appbrew_darwin # here we filter the macos only build id
     # you'll need to have gon on PATH
     cmd: gon
     # you can follow the gon docs to properly create the gon.hcl config file:
