@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c714b94-af32-4d10-9183-d0b28c608839" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/goreleaser.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.goreleaser.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.goreleaser.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gon.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/gon.hcl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
