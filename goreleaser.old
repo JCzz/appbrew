@@ -1,0 +1,25 @@
+# This is an example .goreleaser.yml file with some sane defaults.
+# Make sure to check the documentation at http://goreleaser.com
+before:
+  hooks:
+    # You may remove this if you don't use go modules.
+    - go mod tidy
+    # you may remove this if you don't need go generate
+    - go generate ./...
+
+builds:
+- binary: foo
+  id: appbrew
+  goos:
+  - linux
+  goarch:
+  - amd64
+# notice that we need a separated build for the MacOS binary only:
+- binary: foo
+  id: appbrew-macos
+  goos:
+  - darwin
+  goarch:
+  - amd64
+  hooks:
+    post: gon gon.hcl
