@@ -7,7 +7,7 @@ builds:
       - amd64
   # notice that we need a separated build for the macos binary only:
   - binary: foo
-    id: foo-macos
+    id: appbrew-macos
     goos:
       - darwin
     goarch:
