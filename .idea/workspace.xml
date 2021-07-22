@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c714b94-af32-4d10-9183-d0b28c608839" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/appbrew_bindata.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.goreleaser.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_bundle.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gon.hcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goreleaser.old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/key.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manually.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mykey" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mykey.pub" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210720_0006" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210722_0001" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
@@ -61,6 +71,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
